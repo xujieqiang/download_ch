@@ -1,0 +1,30 @@
+{{ define "index/index.html" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12  col-md-12  col-sm-12"><h1>请用浏览器打开该{{ .tt }}，<br>然后点击“下载”</h1></div>
+            <div class="col-lg-12  col-md-12  col-sm-12">
+                <h1><a href="/download?file=zo.apk">下载 zoom</a></h1>
+                <h1><a href="/download?file=yg.apk">下载 诗歌本</a></h1>
+                <h1><a href="/download?file=bible.apk">下载 精读圣经</a></h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+{{ end }}
